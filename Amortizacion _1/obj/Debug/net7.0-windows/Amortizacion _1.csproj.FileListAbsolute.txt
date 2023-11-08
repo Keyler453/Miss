@@ -1,0 +1,124 @@
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.AssemblyReference.cache
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion__1.Form1.resources
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.GenerateResource.cache
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfoInputs.cache
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfo.cs
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.CoreCompileInputs.cache
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.exe
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.deps.json
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.runtimeconfig.json
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\refint\Amortizacion _1.dll
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.genruntimeconfig.cache
+C:\Users\batal\source\repos\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\ref\Amortizacion _1.dll
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.exe
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.deps.json
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.runtimeconfig.json
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.AssemblyReference.cache
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion__1.Form1.resources
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.GenerateResource.cache
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfoInputs.cache
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfo.cs
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\refint\Amortizacion _1.dll
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.genruntimeconfig.cache
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\Amortizacion _12\Amortizacion _1\Amortizacion _1\obj\Debug\net7.0-windows\ref\Amortizacion _1.dll
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.exe
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.deps.json
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.runtimeconfig.json
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.AssemblyReference.cache
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion__1.Form1.resources
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.GenerateResource.cache
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfoInputs.cache
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfo.cs
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\refint\Amortizacion _1.dll
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.genruntimeconfig.cache
+C:\Users\Eduardo Jimenez\Desktop\EEJPZ\UNIVERSIDAD TecNM\7mo Semestre\Codigo de VS\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\ref\Amortizacion _1.dll
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.exe
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.deps.json
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.runtimeconfig.json
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion__1.Form1.resources
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.GenerateResource.cache
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfoInputs.cache
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfo.cs
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.CoreCompileInputs.cache
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\refint\Amortizacion _1.dll
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.genruntimeconfig.cache
+C:\Users\Caleth\Music\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\ref\Amortizacion _1.dll
+C:\Users\FJ\Desktop\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion__1.Form1.resources
+C:\Users\FJ\Desktop\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.GenerateResource.cache
+C:\Users\FJ\Desktop\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FJ\Desktop\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfoInputs.cache
+C:\Users\FJ\Desktop\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfo.cs
+C:\Users\FJ\Desktop\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.CoreCompileInputs.cache
+C:\Users\FJ\Desktop\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\FJ\Desktop\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\refint\Amortizacion _1.dll
+C:\Users\FJ\Desktop\ProyectoMiss\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.exe
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.deps.json
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.runtimeconfig.json
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion__1.Form1.resources
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.GenerateResource.cache
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfoInputs.cache
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfo.cs
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.CoreCompileInputs.cache
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\refint\Amortizacion _1.dll
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.genruntimeconfig.cache
+C:\Users\Caleth\Videos\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\ref\Amortizacion _1.dll
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.exe
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.deps.json
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.runtimeconfig.json
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion__1.Form1.resources
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.GenerateResource.cache
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfoInputs.cache
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfo.cs
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.CoreCompileInputs.cache
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\refint\Amortizacion _1.dll
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.genruntimeconfig.cache
+C:\Users\Miguel Alexis GM\Downloads\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\ref\Amortizacion _1.dll
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.exe
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.deps.json
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.runtimeconfig.json
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion__1.Form1.resources
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.GenerateResource.cache
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfoInputs.cache
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfo.cs
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.CoreCompileInputs.cache
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\refint\Amortizacion _1.dll
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.genruntimeconfig.cache
+C:\Users\Miguel Alexis GM\Desktop\Amortizacion22\Proyecto\Amortizacion _1\obj\Debug\net7.0-windows\ref\Amortizacion _1.dll
