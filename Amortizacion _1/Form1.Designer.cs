@@ -56,6 +56,10 @@
             label5 = new Label();
             label4 = new Label();
             tabPage3 = new TabPage();
+            label18 = new Label();
+            txtSaldoDisponible = new TextBox();
+            label = new Label();
+            txtNombreRetiro = new TextBox();
             btnCancelar2 = new Button();
             btnRetirar = new Button();
             txtCantidadRetiro = new TextBox();
@@ -63,6 +67,8 @@
             label7 = new Label();
             label6 = new Label();
             tabPage5 = new TabPage();
+            label19 = new Label();
+            txtCreditoD = new TextBox();
             dataGridView1 = new DataGridView();
             Mes = new DataGridViewTextBoxColumn();
             Amortizado = new DataGridViewTextBoxColumn();
@@ -83,6 +89,9 @@
             tabPageEstadoCuenta = new TabPage();
             btnActualizar = new Button();
             dataGridViewEstadoCuenta = new DataGridView();
+            txtClienteC = new TextBox();
+            label20 = new Label();
+            btnBuscar = new Button();
             groupBox1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -98,11 +107,9 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(tabControl1);
-            groupBox1.Location = new Point(22, 34);
-            groupBox1.Margin = new Padding(3, 2, 3, 2);
+            groupBox1.Location = new Point(25, 45);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(3, 2, 3, 2);
-            groupBox1.Size = new Size(772, 333);
+            groupBox1.Size = new Size(882, 444);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Menu Principal";
@@ -115,10 +122,9 @@
             tabControl1.Controls.Add(tabPage5);
             tabControl1.Controls.Add(tabPageEstadoCuenta);
             tabControl1.Location = new Point(0, 0);
-            tabControl1.Margin = new Padding(3, 2, 3, 2);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(820, 340);
+            tabControl1.Size = new Size(937, 453);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -137,11 +143,10 @@
             tabPage1.Controls.Add(label3);
             tabPage1.Controls.Add(label2);
             tabPage1.Controls.Add(label1);
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Margin = new Padding(3, 2, 3, 2);
+            tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3, 2, 3, 2);
-            tabPage1.Size = new Size(812, 312);
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(929, 420);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Cliente";
             tabPage1.UseVisualStyleBackColor = true;
@@ -149,60 +154,60 @@
             // txtFechaNacimiento
             // 
             txtFechaNacimiento.Format = DateTimePickerFormat.Short;
-            txtFechaNacimiento.Location = new Point(194, 206);
-            txtFechaNacimiento.Margin = new Padding(3, 2, 3, 2);
+            txtFechaNacimiento.Location = new Point(222, 275);
             txtFechaNacimiento.Name = "txtFechaNacimiento";
-            txtFechaNacimiento.Size = new Size(219, 23);
+            txtFechaNacimiento.Size = new Size(250, 27);
             txtFechaNacimiento.TabIndex = 15;
             // 
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(29, 206);
+            label15.Location = new Point(33, 275);
             label15.Name = "label15";
-            label15.Size = new Size(119, 15);
+            label15.Size = new Size(149, 20);
             label15.TabIndex = 12;
             label15.Text = "Fecha de Nacimiento";
             // 
             // txtTelefono
             // 
-            txtTelefono.Location = new Point(194, 166);
+            txtTelefono.Location = new Point(222, 221);
+            txtTelefono.Margin = new Padding(3, 4, 3, 4);
             txtTelefono.MaxLength = 10;
             txtTelefono.Name = "txtTelefono";
-            txtTelefono.Size = new Size(174, 23);
+            txtTelefono.Size = new Size(198, 27);
             txtTelefono.TabIndex = 11;
             // 
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(29, 166);
+            label14.Location = new Point(33, 221);
             label14.Name = "label14";
-            label14.Size = new Size(52, 15);
+            label14.Size = new Size(67, 20);
             label14.TabIndex = 10;
             label14.Text = "Teléfono";
             // 
             // txtDireccion
             // 
-            txtDireccion.Location = new Point(194, 130);
+            txtDireccion.Location = new Point(222, 173);
+            txtDireccion.Margin = new Padding(3, 4, 3, 4);
             txtDireccion.Name = "txtDireccion";
-            txtDireccion.Size = new Size(174, 23);
+            txtDireccion.Size = new Size(198, 27);
             txtDireccion.TabIndex = 9;
             // 
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(29, 132);
+            label13.Location = new Point(33, 176);
             label13.Name = "label13";
-            label13.Size = new Size(57, 15);
+            label13.Size = new Size(72, 20);
             label13.TabIndex = 8;
             label13.Text = "Dirección";
             // 
             // btnCancelar1
             // 
-            btnCancelar1.Location = new Point(602, 163);
-            btnCancelar1.Margin = new Padding(3, 2, 3, 2);
+            btnCancelar1.Location = new Point(688, 217);
             btnCancelar1.Name = "btnCancelar1";
-            btnCancelar1.Size = new Size(83, 22);
+            btnCancelar1.Size = new Size(95, 29);
             btnCancelar1.TabIndex = 7;
             btnCancelar1.Text = "Cancelar";
             btnCancelar1.UseVisualStyleBackColor = true;
@@ -210,10 +215,9 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(602, 79);
-            btnGuardar.Margin = new Padding(3, 2, 3, 2);
+            btnGuardar.Location = new Point(688, 105);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(83, 22);
+            btnGuardar.Size = new Size(95, 29);
             btnGuardar.TabIndex = 6;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
@@ -221,54 +225,51 @@
             // 
             // txtMontoA
             // 
-            txtMontoA.Location = new Point(195, 93);
-            txtMontoA.Margin = new Padding(3, 2, 3, 2);
+            txtMontoA.Location = new Point(223, 124);
             txtMontoA.Name = "txtMontoA";
-            txtMontoA.Size = new Size(173, 23);
+            txtMontoA.Size = new Size(197, 27);
             txtMontoA.TabIndex = 5;
             // 
             // txtCurp
             // 
-            txtCurp.Location = new Point(195, 52);
-            txtCurp.Margin = new Padding(3, 2, 3, 2);
+            txtCurp.Location = new Point(223, 69);
             txtCurp.MaxLength = 18;
             txtCurp.Name = "txtCurp";
-            txtCurp.Size = new Size(173, 23);
+            txtCurp.Size = new Size(197, 27);
             txtCurp.TabIndex = 4;
             // 
             // txtNombre1
             // 
-            txtNombre1.Location = new Point(195, 18);
-            txtNombre1.Margin = new Padding(3, 2, 3, 2);
+            txtNombre1.Location = new Point(223, 24);
             txtNombre1.Name = "txtNombre1";
-            txtNombre1.Size = new Size(173, 23);
+            txtNombre1.Size = new Size(197, 27);
             txtNombre1.TabIndex = 3;
             txtNombre1.TextChanged += txtNombre1_TextChanged;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(29, 57);
+            label3.Location = new Point(33, 76);
             label3.Name = "label3";
-            label3.Size = new Size(37, 15);
+            label3.Size = new Size(45, 20);
             label3.TabIndex = 2;
             label3.Text = "CURP";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(29, 93);
+            label2.Location = new Point(33, 124);
             label2.Name = "label2";
-            label2.Size = new Size(106, 15);
+            label2.Size = new Size(134, 20);
             label2.TabIndex = 1;
             label2.Text = "Monto de apertura";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(29, 22);
+            label1.Location = new Point(33, 29);
             label1.Name = "label1";
-            label1.Size = new Size(51, 15);
+            label1.Size = new Size(64, 20);
             label1.TabIndex = 0;
             label1.Text = "Nombre";
             // 
@@ -283,68 +284,66 @@
             tabPage2.Controls.Add(txtNombre2);
             tabPage2.Controls.Add(label5);
             tabPage2.Controls.Add(label4);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Margin = new Padding(3, 2, 3, 2);
+            tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3, 2, 3, 2);
-            tabPage2.Size = new Size(812, 312);
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(929, 420);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Depósitos";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(172, 94);
-            numericUpDown1.Margin = new Padding(2);
+            numericUpDown1.Location = new Point(197, 125);
+            numericUpDown1.Margin = new Padding(2, 3, 2, 3);
             numericUpDown1.Maximum = new decimal(new int[] { 276447232, 23283, 0, 0 });
             numericUpDown1.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(170, 23);
+            numericUpDown1.Size = new Size(194, 27);
             numericUpDown1.TabIndex = 10;
             numericUpDown1.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(36, 134);
+            label17.Location = new Point(41, 179);
             label17.Margin = new Padding(2, 0, 2, 0);
             label17.Name = "label17";
-            label17.Size = new Size(64, 15);
+            label17.Size = new Size(84, 20);
             label17.TabIndex = 9;
             label17.Text = "Saldo Total";
             // 
             // saldoTotal
             // 
-            saldoTotal.Location = new Point(172, 132);
-            saldoTotal.Margin = new Padding(2);
+            saldoTotal.Location = new Point(197, 176);
+            saldoTotal.Margin = new Padding(2, 3, 2, 3);
             saldoTotal.Name = "saldoTotal";
-            saldoTotal.Size = new Size(170, 23);
+            saldoTotal.Size = new Size(194, 27);
             saldoTotal.TabIndex = 8;
             // 
             // curptxt
             // 
-            curptxt.Location = new Point(172, 62);
-            curptxt.Margin = new Padding(2);
+            curptxt.Location = new Point(197, 83);
+            curptxt.Margin = new Padding(2, 3, 2, 3);
             curptxt.Name = "curptxt";
-            curptxt.Size = new Size(170, 23);
+            curptxt.Size = new Size(194, 27);
             curptxt.TabIndex = 7;
             // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(36, 64);
+            label16.Location = new Point(41, 85);
             label16.Margin = new Padding(2, 0, 2, 0);
             label16.Name = "label16";
-            label16.Size = new Size(37, 15);
+            label16.Size = new Size(45, 20);
             label16.TabIndex = 6;
             label16.Text = "CURP";
             // 
             // btnDepositar
             // 
-            btnDepositar.Location = new Point(443, 29);
-            btnDepositar.Margin = new Padding(3, 2, 3, 2);
+            btnDepositar.Location = new Point(506, 39);
             btnDepositar.Name = "btnDepositar";
-            btnDepositar.Size = new Size(83, 22);
+            btnDepositar.Size = new Size(95, 29);
             btnDepositar.TabIndex = 4;
             btnDepositar.Text = "Depositar";
             btnDepositar.UseVisualStyleBackColor = true;
@@ -353,63 +352,97 @@
             // txtNombre2
             // 
             txtNombre2.Enabled = false;
-            txtNombre2.Location = new Point(172, 32);
-            txtNombre2.Margin = new Padding(3, 2, 3, 2);
+            txtNombre2.Location = new Point(197, 43);
             txtNombre2.Name = "txtNombre2";
-            txtNombre2.Size = new Size(170, 23);
+            txtNombre2.Size = new Size(194, 27);
             txtNombre2.TabIndex = 2;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(36, 94);
+            label5.Location = new Point(41, 125);
             label5.Name = "label5";
-            label5.Size = new Size(116, 15);
+            label5.Size = new Size(148, 20);
             label5.TabIndex = 1;
             label5.Text = "Cantidad a depositar";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(36, 32);
+            label4.Location = new Point(41, 43);
             label4.Name = "label4";
-            label4.Size = new Size(51, 15);
+            label4.Size = new Size(64, 20);
             label4.TabIndex = 0;
             label4.Text = "Nombre";
             // 
             // tabPage3
             // 
+            tabPage3.Controls.Add(label18);
+            tabPage3.Controls.Add(txtSaldoDisponible);
+            tabPage3.Controls.Add(label);
+            tabPage3.Controls.Add(txtNombreRetiro);
             tabPage3.Controls.Add(btnCancelar2);
             tabPage3.Controls.Add(btnRetirar);
             tabPage3.Controls.Add(txtCantidadRetiro);
             tabPage3.Controls.Add(txtCurpRetiro);
             tabPage3.Controls.Add(label7);
             tabPage3.Controls.Add(label6);
-            tabPage3.Location = new Point(4, 24);
-            tabPage3.Margin = new Padding(3, 2, 3, 2);
+            tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3, 2, 3, 2);
-            tabPage3.Size = new Size(812, 312);
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(929, 420);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Retiro";
             tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(76, 183);
+            label18.Name = "label18";
+            label18.Size = new Size(123, 20);
+            label18.TabIndex = 9;
+            label18.Text = "Saldo Disponible";
+            // 
+            // txtSaldoDisponible
+            // 
+            txtSaldoDisponible.Enabled = false;
+            txtSaldoDisponible.Location = new Point(217, 183);
+            txtSaldoDisponible.Name = "txtSaldoDisponible";
+            txtSaldoDisponible.Size = new Size(198, 27);
+            txtSaldoDisponible.TabIndex = 8;
+            // 
+            // label
+            // 
+            label.AutoSize = true;
+            label.Location = new Point(67, 32);
+            label.Name = "label";
+            label.Size = new Size(142, 20);
+            label.TabIndex = 7;
+            label.Text = "Nombre del Titular: ";
+            // 
+            // txtNombreRetiro
+            // 
+            txtNombreRetiro.Enabled = false;
+            txtNombreRetiro.Location = new Point(217, 32);
+            txtNombreRetiro.Name = "txtNombreRetiro";
+            txtNombreRetiro.Size = new Size(198, 27);
+            txtNombreRetiro.TabIndex = 6;
+            // 
             // btnCancelar2
             // 
-            btnCancelar2.Location = new Point(302, 162);
-            btnCancelar2.Margin = new Padding(3, 2, 3, 2);
+            btnCancelar2.Location = new Point(345, 216);
             btnCancelar2.Name = "btnCancelar2";
-            btnCancelar2.Size = new Size(83, 22);
+            btnCancelar2.Size = new Size(95, 29);
             btnCancelar2.TabIndex = 5;
             btnCancelar2.Text = "Cancelar";
             btnCancelar2.UseVisualStyleBackColor = true;
             // 
             // btnRetirar
             // 
-            btnRetirar.Location = new Point(122, 162);
-            btnRetirar.Margin = new Padding(3, 2, 3, 2);
+            btnRetirar.Location = new Point(139, 216);
             btnRetirar.Name = "btnRetirar";
-            btnRetirar.Size = new Size(83, 22);
+            btnRetirar.Size = new Size(95, 29);
             btnRetirar.TabIndex = 4;
             btnRetirar.Text = "Retirar";
             btnRetirar.UseVisualStyleBackColor = true;
@@ -417,41 +450,45 @@
             // 
             // txtCantidadRetiro
             // 
-            txtCantidadRetiro.Location = new Point(190, 82);
-            txtCantidadRetiro.Margin = new Padding(3, 2, 3, 2);
+            txtCantidadRetiro.Location = new Point(217, 132);
             txtCantidadRetiro.Name = "txtCantidadRetiro";
-            txtCantidadRetiro.Size = new Size(174, 23);
+            txtCantidadRetiro.Size = new Size(198, 27);
             txtCantidadRetiro.TabIndex = 3;
             // 
             // txtCurpRetiro
             // 
-            txtCurpRetiro.Location = new Point(190, 36);
-            txtCurpRetiro.Margin = new Padding(3, 2, 3, 2);
+            txtCurpRetiro.Location = new Point(217, 87);
             txtCurpRetiro.Name = "txtCurpRetiro";
-            txtCurpRetiro.Size = new Size(174, 23);
+            txtCurpRetiro.Size = new Size(198, 27);
             txtCurpRetiro.TabIndex = 2;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(52, 86);
+            label7.Location = new Point(67, 135);
             label7.Name = "label7";
-            label7.Size = new Size(89, 15);
+            label7.Size = new Size(112, 20);
             label7.TabIndex = 1;
             label7.Text = "Monto a retirar:";
+            label7.Click += label7_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(52, 40);
+            label6.Location = new Point(67, 87);
             label6.Name = "label6";
-            label6.Size = new Size(96, 15);
+            label6.Size = new Size(120, 20);
             label6.TabIndex = 0;
             label6.Text = "CURP del titular: ";
             label6.Click += label6_Click;
             // 
             // tabPage5
             // 
+            tabPage5.Controls.Add(btnBuscar);
+            tabPage5.Controls.Add(label20);
+            tabPage5.Controls.Add(txtClienteC);
+            tabPage5.Controls.Add(label19);
+            tabPage5.Controls.Add(txtCreditoD);
             tabPage5.Controls.Add(dataGridView1);
             tabPage5.Controls.Add(txtResultadoCredito);
             tabPage5.Controls.Add(label12);
@@ -465,23 +502,40 @@
             tabPage5.Controls.Add(label10);
             tabPage5.Controls.Add(label9);
             tabPage5.Controls.Add(label8);
-            tabPage5.Location = new Point(4, 24);
-            tabPage5.Margin = new Padding(3, 2, 3, 2);
+            tabPage5.Location = new Point(4, 29);
             tabPage5.Name = "tabPage5";
-            tabPage5.Size = new Size(812, 312);
+            tabPage5.Size = new Size(929, 420);
             tabPage5.TabIndex = 4;
             tabPage5.Text = "Credito";
             tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(19, 178);
+            label19.Name = "label19";
+            label19.Size = new Size(132, 20);
+            label19.TabIndex = 16;
+            label19.Text = "Credito disponible";
+            // 
+            // txtCreditoD
+            // 
+            txtCreditoD.Enabled = false;
+            txtCreditoD.Location = new Point(157, 178);
+            txtCreditoD.Name = "txtCreditoD";
+            txtCreditoD.Size = new Size(173, 27);
+            txtCreditoD.TabIndex = 15;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Mes, Amortizado, Interes, Cuota });
-            dataGridView1.Location = new Point(27, 196);
+            dataGridView1.Location = new Point(44, 277);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(699, 150);
+            dataGridView1.Size = new Size(799, 200);
             dataGridView1.TabIndex = 14;
             // 
             // Mes
@@ -515,27 +569,25 @@
             // txtResultadoCredito
             // 
             txtResultadoCredito.Enabled = false;
-            txtResultadoCredito.Location = new Point(475, 52);
-            txtResultadoCredito.Margin = new Padding(3, 2, 3, 2);
+            txtResultadoCredito.Location = new Point(623, 171);
             txtResultadoCredito.Name = "txtResultadoCredito";
-            txtResultadoCredito.Size = new Size(152, 23);
+            txtResultadoCredito.Size = new Size(206, 27);
             txtResultadoCredito.TabIndex = 13;
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(474, 28);
+            label12.Location = new Point(425, 174);
             label12.Name = "label12";
-            label12.Size = new Size(138, 15);
+            label12.Size = new Size(174, 20);
             label12.TabIndex = 12;
             label12.Text = "Cuota a mensual a pagar";
             // 
             // btnCancelar3
             // 
-            btnCancelar3.Location = new Point(625, 116);
-            btnCancelar3.Margin = new Padding(3, 2, 3, 2);
+            btnCancelar3.Location = new Point(672, 219);
             btnCancelar3.Name = "btnCancelar3";
-            btnCancelar3.Size = new Size(83, 22);
+            btnCancelar3.Size = new Size(95, 29);
             btnCancelar3.TabIndex = 11;
             btnCancelar3.Text = "Cancelar";
             btnCancelar3.UseVisualStyleBackColor = true;
@@ -543,10 +595,9 @@
             // 
             // btnSolicitarC
             // 
-            btnSolicitarC.Location = new Point(450, 116);
-            btnSolicitarC.Margin = new Padding(3, 2, 3, 2);
+            btnSolicitarC.Location = new Point(482, 219);
             btnSolicitarC.Name = "btnSolicitarC";
-            btnSolicitarC.Size = new Size(127, 22);
+            btnSolicitarC.Size = new Size(145, 29);
             btnSolicitarC.TabIndex = 10;
             btnSolicitarC.Text = "Solicitar Credito";
             btnSolicitarC.UseVisualStyleBackColor = true;
@@ -556,69 +607,65 @@
             // 
             cbCuotas.FormattingEnabled = true;
             cbCuotas.Items.AddRange(new object[] { "6", "12", "24", "48" });
-            cbCuotas.Location = new Point(197, 140);
-            cbCuotas.Margin = new Padding(3, 2, 3, 2);
+            cbCuotas.Location = new Point(623, 128);
             cbCuotas.Name = "cbCuotas";
-            cbCuotas.Size = new Size(181, 23);
+            cbCuotas.Size = new Size(206, 28);
             cbCuotas.TabIndex = 8;
             // 
             // txtTasaInteres
             // 
-            txtTasaInteres.Location = new Point(197, 104);
-            txtTasaInteres.Margin = new Padding(3, 2, 3, 2);
+            txtTasaInteres.Location = new Point(623, 79);
             txtTasaInteres.Name = "txtTasaInteres";
-            txtTasaInteres.Size = new Size(181, 23);
+            txtTasaInteres.Size = new Size(206, 27);
             txtTasaInteres.TabIndex = 6;
             // 
             // txtMontoCredito
             // 
-            txtMontoCredito.Location = new Point(197, 69);
-            txtMontoCredito.Margin = new Padding(3, 2, 3, 2);
+            txtMontoCredito.Location = new Point(623, 32);
             txtMontoCredito.Name = "txtMontoCredito";
-            txtMontoCredito.Size = new Size(181, 23);
+            txtMontoCredito.Size = new Size(206, 27);
             txtMontoCredito.TabIndex = 5;
             // 
             // txtBeneficiario
             // 
-            txtBeneficiario.Location = new Point(197, 36);
-            txtBeneficiario.Margin = new Padding(3, 2, 3, 2);
+            txtBeneficiario.Location = new Point(124, 25);
             txtBeneficiario.Name = "txtBeneficiario";
-            txtBeneficiario.Size = new Size(181, 23);
+            txtBeneficiario.Size = new Size(206, 27);
             txtBeneficiario.TabIndex = 4;
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(27, 140);
+            label11.Location = new Point(459, 131);
             label11.Name = "label11";
-            label11.Size = new Size(111, 15);
+            label11.Size = new Size(140, 20);
             label11.TabIndex = 3;
             label11.Text = "Cantidad de Meses}";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(27, 106);
+            label10.Location = new Point(493, 86);
             label10.Name = "label10";
-            label10.Size = new Size(83, 15);
+            label10.Size = new Size(106, 20);
             label10.TabIndex = 2;
             label10.Text = "Tasa de interes";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(27, 70);
+            label9.Location = new Point(468, 35);
             label9.Name = "label9";
-            label9.Size = new Size(104, 15);
+            label9.Size = new Size(131, 20);
             label9.TabIndex = 1;
             label9.Text = "Monto del Credito";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(27, 38);
+            label8.Location = new Point(19, 32);
             label8.Name = "label8";
-            label8.Size = new Size(33, 15);
+            label8.Size = new Size(40, 20);
             label8.TabIndex = 0;
             label8.Text = "Curp";
             // 
@@ -626,21 +673,19 @@
             // 
             tabPageEstadoCuenta.Controls.Add(btnActualizar);
             tabPageEstadoCuenta.Controls.Add(dataGridViewEstadoCuenta);
-            tabPageEstadoCuenta.Location = new Point(4, 24);
-            tabPageEstadoCuenta.Margin = new Padding(3, 2, 3, 2);
+            tabPageEstadoCuenta.Location = new Point(4, 29);
             tabPageEstadoCuenta.Name = "tabPageEstadoCuenta";
-            tabPageEstadoCuenta.Padding = new Padding(3, 2, 3, 2);
-            tabPageEstadoCuenta.Size = new Size(812, 312);
+            tabPageEstadoCuenta.Padding = new Padding(3);
+            tabPageEstadoCuenta.Size = new Size(929, 420);
             tabPageEstadoCuenta.TabIndex = 3;
             tabPageEstadoCuenta.Text = "Estado de Cuenta";
             tabPageEstadoCuenta.UseVisualStyleBackColor = true;
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(29, 15);
-            btnActualizar.Margin = new Padding(3, 2, 3, 2);
+            btnActualizar.Location = new Point(33, 20);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(83, 22);
+            btnActualizar.Size = new Size(95, 29);
             btnActualizar.TabIndex = 1;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
@@ -648,21 +693,46 @@
             // dataGridViewEstadoCuenta
             // 
             dataGridViewEstadoCuenta.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewEstadoCuenta.Location = new Point(6, 52);
-            dataGridViewEstadoCuenta.Margin = new Padding(3, 2, 3, 2);
+            dataGridViewEstadoCuenta.Location = new Point(7, 69);
             dataGridViewEstadoCuenta.Name = "dataGridViewEstadoCuenta";
             dataGridViewEstadoCuenta.RowHeadersWidth = 51;
             dataGridViewEstadoCuenta.RowTemplate.Height = 29;
-            dataGridViewEstadoCuenta.Size = new Size(740, 190);
+            dataGridViewEstadoCuenta.Size = new Size(846, 253);
             dataGridViewEstadoCuenta.TabIndex = 0;
+            // 
+            // txtClienteC
+            // 
+            txtClienteC.Enabled = false;
+            txtClienteC.Location = new Point(153, 124);
+            txtClienteC.Name = "txtClienteC";
+            txtClienteC.Size = new Size(173, 27);
+            txtClienteC.TabIndex = 17;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(19, 131);
+            label20.Name = "label20";
+            label20.Size = new Size(55, 20);
+            label20.TabIndex = 18;
+            label20.Text = "Cliente";
+            // 
+            // btnBuscar
+            // 
+            btnBuscar.Location = new Point(157, 77);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(145, 29);
+            btnBuscar.TabIndex = 19;
+            btnBuscar.Text = "Buscar Cliente";
+            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(852, 376);
+            ClientSize = new Size(974, 527);
             Controls.Add(groupBox1);
-            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
@@ -743,5 +813,14 @@
         private DataGridViewTextBoxColumn Interes;
         private DataGridViewTextBoxColumn Cuota;
         private DateTimePicker txtFechaNacimiento;
+        private Label label;
+        private TextBox txtNombreRetiro;
+        private TextBox txtSaldoDisponible;
+        private Label label18;
+        private Label label19;
+        private TextBox txtCreditoD;
+        private Button btnBuscar;
+        private Label label20;
+        private TextBox txtClienteC;
     }
 }

@@ -33,8 +33,6 @@ namespace Amortizacion__1
             dataGridViewEstadoCuenta.DataSource = bindingSource;
 
         }
-        // Clase para representar un cliente
-
         class Cliente
         {
 
@@ -48,7 +46,6 @@ namespace Amortizacion__1
 
         }
 
-        // Clase para representar un crédito
         class Credito
         {
             public string Beneficiario { get; set; }
@@ -57,7 +54,6 @@ namespace Amortizacion__1
             public int Cuotas { get; set; }
             public decimal CuotaMensual { get; set; }
         }
-
         public class Amortizacion
         {
             public int Mes { get; set; }
@@ -65,19 +61,16 @@ namespace Amortizacion__1
             public decimal Interes { get; set; }
             public decimal Cuota { get; set; }
         }
-
         class Deposito
         {
             public string NombreCliente { get; set; }
             public decimal CantidadDeposito { get; set; }
         }
-
         class Retiro
         {
             public string NombreCliente { get; set; }
             public decimal CantidadRetiro { get; set; }
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             // Crea columnas y agrega al DataGridView en el orden deseado
@@ -109,26 +102,6 @@ namespace Amortizacion__1
 
                 columnasCreadas = true;
             }
-        }
-
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -203,13 +176,6 @@ namespace Amortizacion__1
             txtCantidadRetiro.Text = "";
         }
 
-
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btnSolicitarC_Click(object sender, EventArgs e)
         {
             // Obtener datos del formulario
@@ -282,6 +248,8 @@ namespace Amortizacion__1
                 // Calcular el saldo total para el cliente
                 decimal saldoTotal = cliente.MontoApertura + totalDepositos - totalRetiros + totalCreditos;
 
+
+
                 // Actualizar el SaldoTotal en el objeto Cliente
                 cliente.SaldoTotal = saldoTotal;
 
@@ -314,13 +282,6 @@ namespace Amortizacion__1
                 .Sum(credito => credito.Monto);
         }
 
-
-
-        private void tabPageEstadoCuenta_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             ActualizarEstadoCuentaManual();
@@ -328,8 +289,56 @@ namespace Amortizacion__1
 
         private void btnRetirar_Click_1(object sender, EventArgs e)
         {
+            // Obtener la CURP del titular y la cantidad a retirar
+            string curpTitular = txtCurpRetiro.Text;
+            decimal cantidadRetiro;
 
+            // Verificar que la cantidad a retirar sea un número decimal válido
+            if (!decimal.TryParse(txtCantidadRetiro.Text, out cantidadRetiro))
+            {
+                MessageBox.Show("Ingrese una cantidad de retiro válida.");
+                return;
+            }
+
+            // Buscar el cliente en la lista por CURP
+            Cliente cliente = listaClientes.Find(c => c.CURP == curpTitular);
+
+            if (cliente != null)
+            {
+                // Colocar automáticamente el nombre del cliente en txtNombreRetiro
+                txtNombreRetiro.Text = cliente.Nombre;
+
+                // Verificar si hay suficiente saldo para el retiro
+                if (cliente.SaldoTotal >= cantidadRetiro)
+                {
+                    // Realizar el retiro
+                    cliente.SaldoTotal -= cantidadRetiro;
+
+                    // Agregar el retiro a la lista de retiros
+                    listaRetiros.Add(new Retiro { NombreCliente = cliente.Nombre, CantidadRetiro = cantidadRetiro });
+
+                    // Actualizar el saldo total en el formulario y en el DataGridView
+                    saldoTotal.Text = "S $" + cliente.SaldoTotal.ToString("0.00");
+
+                    txtSaldoDisponible.Text = cliente.SaldoTotal.ToString("C");
+
+                    MessageBox.Show("Retiro realizado con éxito.");
+                }
+                else
+                {
+                    MessageBox.Show("Saldo insuficiente para realizar el retiro.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Cliente no encontrado.");
+            }
+
+            // Limpiar los cuadros de texto
+            txtCurpRetiro.Text = "";
+            txtCantidadRetiro.Text = "";
         }
+
 
         private void txtNombre1_TextChanged(object sender, EventArgs e)
         {
@@ -360,7 +369,7 @@ namespace Amortizacion__1
                 return;
             }
 
-            // Crear un nuevo cliente
+            // Crear un nuevo cliente con el Monto de Apertura como Saldo Total
             Cliente cliente = new Cliente
             {
                 Nombre = nombre,
@@ -369,7 +378,7 @@ namespace Amortizacion__1
                 Direccion = direccion,
                 Telefono = telefono,
                 Fecha_Nacimiento = fecha,
-
+                SaldoTotal = montoApertura // El Monto de Apertura se guarda como Saldo Total directamente aquí
             };
 
             // Agregar el cliente a la lista
@@ -485,10 +494,11 @@ namespace Amortizacion__1
 
             if (cliente != null)
             {
-                // Verificar si el monto del crédito solicitado no supera el saldo disponible del cliente
-                decimal saldoDisponible = cliente.MontoApertura - ObtenerTotalRetiros(cliente);
 
-                if (monto <= saldoDisponible)
+                decimal limiteCredito = cliente.SaldoTotal * 2;
+
+                // Verificar si el monto del crédito solicitado no supera el límite del crédito
+                if (monto <= limiteCredito)
                 {
                     // Calcular la amortización francesa
                     List<Amortizacion> tablaAmortizacion = CalcularAmortiacionFrancesa(monto, tasaInteres, cuotas, cuotaMensual);
@@ -542,9 +552,48 @@ namespace Amortizacion__1
             txtBeneficiario.Text = "";
             txtMontoCredito.Text = "";
             txtTasaInteres.Text = "";
+            txtClienteC.Text = "";
+            txtCreditoD.Text = "";
             cbCuotas.SelectedIndex = -1; // Desseleccionar el ítem
             txtResultadoCredito.Text = "";
             dataGridView1.Rows.Clear();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            // Obtener la CURP ingresada por el usuario
+            string curpBuscada = txtBeneficiario.Text;
+
+            // Buscar el cliente en la lista por CURP
+            Cliente cliente = listaClientes.Find(c => c.CURP == curpBuscada);
+
+            if (cliente != null)
+            {
+                // Establecer el nombre del cliente en txtClienteC
+                txtClienteC.Text = cliente.Nombre;
+
+                // Calcular el límite del crédito (dos veces el saldo total)
+                decimal limiteCredito = cliente.SaldoTotal * 2;
+
+                // Establecer el límite del crédito en txtCreditoD
+                txtCreditoD.Text = limiteCredito.ToString("C");
+            }
+            else
+            {
+                // Si no se encuentra un cliente con la CURP ingresada, mostrar un mensaje de error
+                MessageBox.Show("Cliente no encontrado con la CURP proporcionada.");
+
+                // Limpiar los campos de texto
+                txtClienteC.Text = "";
+                txtCreditoD.Text = "";
+            }
+        }
+
     }
 }
