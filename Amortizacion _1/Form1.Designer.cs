@@ -163,6 +163,7 @@
             txtFechaNacimiento.Name = "txtFechaNacimiento";
             txtFechaNacimiento.Size = new Size(219, 23);
             txtFechaNacimiento.TabIndex = 15;
+            txtFechaNacimiento.TabStop = false;
             txtFechaNacimiento.Value = new DateTime(2023, 11, 14, 0, 0, 0, 0);
             // 
             // label15
@@ -181,6 +182,7 @@
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(174, 23);
             txtTelefono.TabIndex = 11;
+            txtTelefono.KeyPress += txtTelefono_KeyPress;
             // 
             // label14
             // 
@@ -253,7 +255,6 @@
             txtNombre1.Name = "txtNombre1";
             txtNombre1.Size = new Size(173, 23);
             txtNombre1.TabIndex = 3;
-            txtNombre1.TextChanged += txtNombre1_TextChanged;
             // 
             // label3
             // 
@@ -305,7 +306,7 @@
             // numericUpDown1
             // 
             numericUpDown1.Location = new Point(172, 94);
-            numericUpDown1.Margin = new Padding(2, 2, 2, 2);
+            numericUpDown1.Margin = new Padding(2);
             numericUpDown1.Maximum = new decimal(new int[] { 276447232, 23283, 0, 0 });
             numericUpDown1.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
@@ -326,7 +327,7 @@
             // saldoTotal
             // 
             saldoTotal.Location = new Point(172, 132);
-            saldoTotal.Margin = new Padding(2, 2, 2, 2);
+            saldoTotal.Margin = new Padding(2);
             saldoTotal.Name = "saldoTotal";
             saldoTotal.Size = new Size(170, 23);
             saldoTotal.TabIndex = 8;
@@ -334,7 +335,7 @@
             // curptxt
             // 
             curptxt.Location = new Point(172, 62);
-            curptxt.Margin = new Padding(2, 2, 2, 2);
+            curptxt.Margin = new Padding(2);
             curptxt.Name = "curptxt";
             curptxt.Size = new Size(170, 23);
             curptxt.TabIndex = 7;
@@ -499,7 +500,6 @@
             label6.Size = new Size(96, 15);
             label6.TabIndex = 0;
             label6.Text = "CURP del titular: ";
-            label6.Click += label6_Click;
             // 
             // tabPage5
             // 

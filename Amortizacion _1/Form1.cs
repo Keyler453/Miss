@@ -39,7 +39,7 @@ namespace Amortizacion__1
             public string Nombre { get; set; }
             public string CURP { get; set; }
             public string Direccion { get; set; }
-            public string Telefono { get; set; }
+            public int Telefono;
             public DateTime Fecha_Nacimiento { get; set; }
             public decimal MontoApertura { get; set; }
             public decimal SaldoTotal { get; set; }
@@ -92,9 +92,9 @@ namespace Amortizacion__1
                 columnaRetiros.Name = "Retiros";
                 dataGridViewEstadoCuenta.Columns.Add(columnaRetiros);
 
-                DataGridViewTextBoxColumn columnaCreditos = new DataGridViewTextBoxColumn();
-                columnaCreditos.Name = "Créditos";
-                dataGridViewEstadoCuenta.Columns.Add(columnaCreditos);
+                DataGridViewTextBoxColumn columnaCréditos = new DataGridViewTextBoxColumn();
+                columnaCréditos.Name = "Créditos";
+                dataGridViewEstadoCuenta.Columns.Add(columnaCréditos);
 
                 DataGridViewTextBoxColumn columnaSaldoTotal = new DataGridViewTextBoxColumn();
                 columnaSaldoTotal.Name = "SaldoTotal";
@@ -132,9 +132,6 @@ namespace Amortizacion__1
 
             MessageBox.Show("Cliente guardado exitosamente.");
         }
-
-
-
         private void btnCancelar1_Click(object sender, EventArgs e)
         {
             // Limpiar los cuadros de texto
@@ -338,7 +335,16 @@ namespace Amortizacion__1
             txtCurpRetiro.Text = "";
             txtCantidadRetiro.Text = "";
         }
-
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            {
+                // Permitir solo dígitos y la tecla de retroceso
+                if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+                {
+                    e.Handled = true; // Ignorar el carácter ingresado
+                }
+            }
+        }
         private void btnGuardar_Click_1(object sender, EventArgs e)
         {
             // Obtener datos del formulario
@@ -346,8 +352,18 @@ namespace Amortizacion__1
             decimal montoApertura;
             string curp = txtCurp.Text;
             string direccion = txtDireccion.Text;
-            string telefono = txtTelefono.Text;
-            DateTime fechaNacimiento = txtFechaNacimiento.Value.Date;
+            int telefono;
+
+            if (int.TryParse(txtTelefono.Text, out telefono))
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese un número de teléfono válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            DateTime fechaNacimiento = txtFechaNacimiento.Value;
 
             // Validar que el monto de apertura sea un número decimal válido
             if (!decimal.TryParse(txtMontoA.Text, out montoApertura))
@@ -471,7 +487,6 @@ namespace Amortizacion__1
                 MessageBox.Show("Cliente no encontrado con la CURP proporcionada.");
             }
         }
-
 
         private void btnSolicitarC_Click_1(object sender, EventArgs e)
         {
