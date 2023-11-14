@@ -40,7 +40,7 @@ namespace Amortizacion__1
             public string CURP { get; set; }
             public string Direccion { get; set; }
             public string Telefono { get; set; }
-            public string Fecha_Nacimiento { get; set; }
+            public DateTime Fecha_Nacimiento { get; set; }
             public decimal MontoApertura { get; set; }
             public decimal SaldoTotal { get; set; }
 
@@ -339,12 +339,6 @@ namespace Amortizacion__1
             txtCantidadRetiro.Text = "";
         }
 
-
-        private void txtNombre1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnGuardar_Click_1(object sender, EventArgs e)
         {
             // Obtener datos del formulario
@@ -353,7 +347,7 @@ namespace Amortizacion__1
             string curp = txtCurp.Text;
             string direccion = txtDireccion.Text;
             string telefono = txtTelefono.Text;
-            string fecha = txtFechaNacimiento.Text;
+            DateTime fechaNacimiento = txtFechaNacimiento.Value.Date;
 
             // Validar que el monto de apertura sea un número decimal válido
             if (!decimal.TryParse(txtMontoA.Text, out montoApertura))
@@ -377,9 +371,10 @@ namespace Amortizacion__1
                 CURP = curp,
                 Direccion = direccion,
                 Telefono = telefono,
-                Fecha_Nacimiento = fecha,
-                SaldoTotal = montoApertura // El Monto de Apertura se guarda como Saldo Total directamente aquí
+                Fecha_Nacimiento = fechaNacimiento, // Asignar el DateTime en lugar de un string
+                SaldoTotal = montoApertura
             };
+
 
             // Agregar el cliente a la lista
             listaClientes.Add(cliente);
