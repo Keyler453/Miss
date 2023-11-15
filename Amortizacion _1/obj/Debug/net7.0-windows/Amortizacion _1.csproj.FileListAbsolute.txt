@@ -155,3 +155,19 @@ C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\r
 C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.pdb
 C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.genruntimeconfig.cache
 C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\ref\Amortizacion _1.dll
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.exe
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.deps.json
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.runtimeconfig.json
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion__1.Form1.resources
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.GenerateResource.cache
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfoInputs.cache
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfo.cs
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.CoreCompileInputs.cache
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\obj\Debug\net7.0-windows\refint\Amortizacion _1.dll
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.genruntimeconfig.cache
+C:\Users\Miguel Alexis GM\Desktop\Nuevo Miss\Miss\Amortizacion _1\obj\Debug\net7.0-windows\ref\Amortizacion _1.dll

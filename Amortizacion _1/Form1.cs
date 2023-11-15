@@ -332,7 +332,7 @@ namespace Amortizacion__1
             }
 
             // Limpiar los cuadros de texto
-            txtCurpRetiro.Text = "";
+
             txtCantidadRetiro.Text = "";
         }
         private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
@@ -370,7 +370,7 @@ namespace Amortizacion__1
             if (edad.TotalDays < 18 * 365)
             {
                 MessageBox.Show("Debe ser mayor de 18 años para " +
-                    "abrir una cuenta en nuestro banco.", "Error", 
+                    "abrir una cuenta en nuestro banco.", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return; // Salir del método si el usuario no tiene más de 18 años
             }
@@ -426,7 +426,7 @@ namespace Amortizacion__1
 
         private void btnCancelar1_Click_1(object sender, EventArgs e)
         {
-            
+
 
             {
                 // Limpiar los cuadros de texto
@@ -485,13 +485,16 @@ namespace Amortizacion__1
                 listaDepositos.Add(new Deposito { NombreCliente = cliente.Nombre, CantidadDeposito = cantidadDeposito });
 
                 // Actualizar el saldo total en el formulario y en el DataGridView
-                saldoTotal.Text = "S $" + cliente.SaldoTotal.ToString("0.00");
+                saldoTotal.Text = "$" + cliente.SaldoTotal.ToString("0.00");
                 bindingSource.ResetBindings(false);
+
+                numericUpDown1.Value = 0;
             }
             else
             {
                 // Si no se encuentra un cliente con la CURP ingresada, muestra un mensaje de error
                 MessageBox.Show("Cliente no encontrado con la CURP proporcionada.");
+
             }
         }
 
@@ -612,5 +615,20 @@ namespace Amortizacion__1
             }
         }
 
+        private void Limpiard_Click(object sender, EventArgs e)
+        {
+            numericUpDown1.Value = 0;
+            txtNombre2.Text = "";
+            curptxt.Text = "";
+            saldoTotal.Text = "";
+        }
+
+        private void btnCancelar2_Click(object sender, EventArgs e)
+        {
+            txtCurpRetiro.Text = "";
+            txtCantidadRetiro.Text = "";
+            txtNombreRetiro.Text = "";
+            txtSaldoDisponible.Text = "";
+        }
     }
 }
