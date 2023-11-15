@@ -39,7 +39,7 @@ namespace Amortizacion__1
             public string Nombre { get; set; }
             public string CURP { get; set; }
             public string Direccion { get; set; }
-            public int Telefono;
+            public string Telefono { get; set; }
             public DateTime Fecha_Nacimiento { get; set; }
             public decimal MontoApertura { get; set; }
             public decimal SaldoTotal { get; set; }
@@ -338,11 +338,11 @@ namespace Amortizacion__1
         private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
         {
             {
-                // Permitir solo dígitos y la tecla de retroceso
-                if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+                if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != ' ' && e.KeyChar != '-' && e.KeyChar != '(' && e.KeyChar != ')')
                 {
-                    e.Handled = true; // Ignorar el carácter ingresado
+                    e.Handled = true;
                 }
+
             }
         }
         private void btnGuardar_Click_1(object sender, EventArgs e)
@@ -350,20 +350,30 @@ namespace Amortizacion__1
             // Obtener datos del formulario
             string nombre = txtNombre1.Text;
             decimal montoApertura;
+
+            if (decimal.TryParse(txtMontoA.Text, out decimal montoAperturaParse))
+            {
+            }
             string curp = txtCurp.Text;
             string direccion = txtDireccion.Text;
-            int telefono;
+            string telefonoStr = txtTelefono.Text;
 
-            if (int.TryParse(txtTelefono.Text, out telefono))
+            if (int.TryParse(telefonoStr, out int telefono))
             {
 
-            }
-            else
-            {
-                MessageBox.Show("Por favor, ingrese un número de teléfono válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             DateTime fechaNacimiento = txtFechaNacimiento.Value;
+
+            // Validar que el usuario tenga más de 18 años
+            TimeSpan edad = DateTime.Now - fechaNacimiento;
+            if (edad.TotalDays < 18 * 365)
+            {
+                MessageBox.Show("Debe ser mayor de 18 años para " +
+                    "abrir una cuenta en nuestro banco.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Salir del método si el usuario no tiene más de 18 años
+            }
 
             // Validar que el monto de apertura sea un número decimal válido
             if (!decimal.TryParse(txtMontoA.Text, out montoApertura))
@@ -386,7 +396,7 @@ namespace Amortizacion__1
                 MontoApertura = montoApertura,
                 CURP = curp,
                 Direccion = direccion,
-                Telefono = telefono,
+                Telefono = telefonoStr,
                 Fecha_Nacimiento = fechaNacimiento, // Asignar el DateTime en lugar de un string
                 SaldoTotal = montoApertura
             };
@@ -605,5 +615,13 @@ namespace Amortizacion__1
             }
         }
 
+        private void txtMontoA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo dígitos, la tecla de retroceso, espacios, guiones y paréntesis
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != ' ' && e.KeyChar != '-' && e.KeyChar != '(' && e.KeyChar != ')')
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

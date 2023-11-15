@@ -238,6 +238,7 @@
             txtMontoA.Name = "txtMontoA";
             txtMontoA.Size = new Size(173, 23);
             txtMontoA.TabIndex = 5;
+            txtMontoA.KeyPress += txtMontoA_KeyPress;
             // 
             // txtCurp
             // 
