@@ -1,4 +1,4 @@
-Lo que hay que corregir son:
+#Lo que hay que corregir son:
 
 1.- En el campo teléfono, solo se acepte numeros (Ya esta realizado)
 
