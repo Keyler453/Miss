@@ -365,6 +365,16 @@ namespace Amortizacion__1
 
             DateTime fechaNacimiento = txtFechaNacimiento.Value;
 
+            // Validar que el usuario tenga más de 18 años
+            TimeSpan edad = DateTime.Now - fechaNacimiento;
+            if (edad.TotalDays < 18 * 365)
+            {
+                MessageBox.Show("Debe ser mayor de 18 años para " +
+                    "abrir una cuenta en nuestro banco.", "Error", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Salir del método si el usuario no tiene más de 18 años
+            }
+
             // Validar que el monto de apertura sea un número decimal válido
             if (!decimal.TryParse(txtMontoA.Text, out montoApertura))
             {
@@ -416,10 +426,7 @@ namespace Amortizacion__1
 
         private void btnCancelar1_Click_1(object sender, EventArgs e)
         {
-            {
-                // Limpia los campos sin guardar los datos
-                LimpiarCampos();
-            }
+            
 
             {
                 // Limpiar los cuadros de texto
