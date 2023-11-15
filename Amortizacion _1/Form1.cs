@@ -370,7 +370,11 @@ namespace Amortizacion__1
             if (edad.TotalDays < 18 * 365)
             {
                 MessageBox.Show("Debe ser mayor de 18 años para " +
+<<<<<<< HEAD
                     "abrir una cuenta en nuestro banco.", "Error",
+=======
+                    "abrir una cuenta en nuestro banco.", "Error", 
+>>>>>>> 2dff489750b1e62ab1405ec7b07c07a5746bb831
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return; // Salir del método si el usuario no tiene más de 18 años
             }
@@ -426,10 +430,7 @@ namespace Amortizacion__1
 
         private void btnCancelar1_Click_1(object sender, EventArgs e)
         {
-            {
-                // Limpia los campos sin guardar los datos
-                LimpiarCampos();
-            }
+            
 
             {
                 // Limpiar los cuadros de texto

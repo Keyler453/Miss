@@ -138,3 +138,20 @@ C:\Users\Caleth\Documents\Miss\Amortizacion _1\bin\Debug\net7.0-windows\Amortiza
 C:\Users\Caleth\Documents\Miss\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.pdb
 C:\Users\Caleth\Documents\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.genruntimeconfig.cache
 C:\Users\Caleth\Documents\Miss\Amortizacion _1\obj\Debug\net7.0-windows\ref\Amortizacion _1.dll
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.exe
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.deps.json
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.runtimeconfig.json
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\bin\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.AssemblyReference.cache
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion__1.Form1.resources
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.GenerateResource.cache
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfoInputs.cache
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.AssemblyInfo.cs
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.dll
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\refint\Amortizacion _1.dll
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.pdb
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\Amortizacion _1.genruntimeconfig.cache
+C:\Users\Eduardo Jimenez\Desktop\Miss\Amortizacion _1\obj\Debug\net7.0-windows\ref\Amortizacion _1.dll
