@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Miguel Alexis GM\\Desktop\\Nuevo Miss\\Miss\\Amortizacion _1\\Amortizacion _1.csproj": {}
+    "C:\\Users\\Caleth\\Desktop\\Miss\\Amortizacion _1\\Amortizacion _1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Miguel Alexis GM\\Desktop\\Nuevo Miss\\Miss\\Amortizacion _1\\Amortizacion _1.csproj": {
+    "C:\\Users\\Caleth\\Desktop\\Miss\\Amortizacion _1\\Amortizacion _1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Miguel Alexis GM\\Desktop\\Nuevo Miss\\Miss\\Amortizacion _1\\Amortizacion _1.csproj",
+        "projectUniqueName": "C:\\Users\\Caleth\\Desktop\\Miss\\Amortizacion _1\\Amortizacion _1.csproj",
         "projectName": "Amortizacion _1",
-        "projectPath": "C:\\Users\\Miguel Alexis GM\\Desktop\\Nuevo Miss\\Miss\\Amortizacion _1\\Amortizacion _1.csproj",
-        "packagesPath": "C:\\Users\\Miguel Alexis GM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Miguel Alexis GM\\Desktop\\Nuevo Miss\\Miss\\Amortizacion _1\\obj\\",
+        "projectPath": "C:\\Users\\Caleth\\Desktop\\Miss\\Amortizacion _1\\Amortizacion _1.csproj",
+        "packagesPath": "C:\\Users\\Caleth\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Caleth\\Desktop\\Miss\\Amortizacion _1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Miguel Alexis GM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Caleth\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

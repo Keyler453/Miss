@@ -18,6 +18,11 @@ namespace Amortizacion__1
         private string nombre;
         private string curp;
         private decimal saldo = 0;
+        private decimal montoTotalCredito;
+        private decimal montoCreditoSolicitado;
+
+        public List<Amortizacion> TablaAmortizacion { get; private set; }
+
 
         // Variables para rastrear si las columnas ya se crearon
         private bool columnasCreadas = false;
@@ -32,6 +37,7 @@ namespace Amortizacion__1
             // Vincula el DataGridView al BindingSource
             dataGridViewEstadoCuenta.DataSource = bindingSource;
 
+
         }
         class Cliente
         {
@@ -39,10 +45,11 @@ namespace Amortizacion__1
             public string Nombre { get; set; }
             public string CURP { get; set; }
             public string Direccion { get; set; }
-            public int Telefono;
+            public string Telefono { get; set; }
             public DateTime Fecha_Nacimiento { get; set; }
             public decimal MontoApertura { get; set; }
             public decimal SaldoTotal { get; set; }
+
 
         }
 
@@ -53,6 +60,8 @@ namespace Amortizacion__1
             public decimal TasaInteres { get; set; }
             public int Cuotas { get; set; }
             public decimal CuotaMensual { get; set; }
+
+
         }
         public class Amortizacion
         {
@@ -315,9 +324,9 @@ namespace Amortizacion__1
                     listaRetiros.Add(new Retiro { NombreCliente = cliente.Nombre, CantidadRetiro = cantidadRetiro });
 
                     // Actualizar el saldo total en el formulario y en el DataGridView
-                    saldoTotal.Text = "S $" + cliente.SaldoTotal.ToString("0.00");
+                    saldoTotal.Text = cliente.SaldoTotal.ToString("0.00");
 
-                    txtSaldoDisponible.Text = cliente.SaldoTotal.ToString("C");
+                    txtSaldoDisponible.Text = cliente.SaldoTotal.ToString();
 
                     MessageBox.Show("Retiro realizado con éxito.");
                 }
@@ -349,18 +358,56 @@ namespace Amortizacion__1
         {
             // Obtener datos del formulario
             string nombre = txtNombre1.Text;
-            decimal montoApertura;
-            string curp = txtCurp.Text;
-            string direccion = txtDireccion.Text;
-            int telefono;
-
-            if (int.TryParse(txtTelefono.Text, out telefono))
+            if (string.IsNullOrWhiteSpace(nombre))
             {
+                MessageBox.Show("Por favor, ingrese un nombre antes de guardar.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            decimal montoApertura;
 
+            if (decimal.TryParse(txtMontoA.Text, out decimal montoAperturaParse))
+            {
+            }
+
+            if (decimal.TryParse(txtMontoA.Text, out montoApertura))
+            {
+                // Validar que el monto de apertura sea igual o mayor a 5000
+                if (montoApertura < 5000)
+                {
+                    MessageBox.Show("El monto de apertura debe ser igual o mayor a 5000.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
             else
             {
-                MessageBox.Show("Por favor, ingrese un número de teléfono válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingrese un monto de apertura válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string curp = txtCurp.Text;
+            if (string.IsNullOrWhiteSpace(curp))
+            {
+                MessageBox.Show("Por favor, ingrese tu curp antes de guardar.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            curp = curp.ToUpper();
+            string direccion = txtDireccion.Text;
+            if (string.IsNullOrWhiteSpace(direccion))
+            {
+
+                MessageBox.Show("Por favor, ingrese tu Dirección antes de guardar.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            string telefonoStr = txtTelefono.Text;
+            if (string.IsNullOrWhiteSpace(telefonoStr))
+            {
+                MessageBox.Show("Por favor, ingrese su numero de telefono antes de guardar.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (int.TryParse(telefonoStr, out int telefono))
+            {
+
             }
 
             DateTime fechaNacimiento = txtFechaNacimiento.Value;
@@ -374,6 +421,15 @@ namespace Amortizacion__1
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return; // Salir del método si el usuario no tiene más de 18 años
             }
+
+            //Validar que el usuario tenga menos de 100 años
+            if (edad.TotalDays >= 100 * 365)
+            {
+                MessageBox.Show("La edad del usuario sobrepasa los 100 años no es posible crearle una cuenta en nuestro banco, disculpas.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Salir del método si el usuario no tiene más de 18 años
+            }
+
 
             // Validar que el monto de apertura sea un número decimal válido
             if (!decimal.TryParse(txtMontoA.Text, out montoApertura))
@@ -396,7 +452,7 @@ namespace Amortizacion__1
                 MontoApertura = montoApertura,
                 CURP = curp,
                 Direccion = direccion,
-                Telefono = telefono,
+                Telefono = telefonoStr,
                 Fecha_Nacimiento = fechaNacimiento, // Asignar el DateTime en lugar de un string
                 SaldoTotal = montoApertura
             };
@@ -485,7 +541,7 @@ namespace Amortizacion__1
                 listaDepositos.Add(new Deposito { NombreCliente = cliente.Nombre, CantidadDeposito = cantidadDeposito });
 
                 // Actualizar el saldo total en el formulario y en el DataGridView
-                saldoTotal.Text = "$" + cliente.SaldoTotal.ToString("0.00");
+                saldoTotal.Text = cliente.SaldoTotal.ToString("0.00");
                 bindingSource.ResetBindings(false);
 
                 numericUpDown1.Value = 0;
@@ -521,16 +577,16 @@ namespace Amortizacion__1
                 if (monto <= limiteCredito)
                 {
                     // Calcular la amortización francesa
-                    List<Amortizacion> tablaAmortizacion = CalcularAmortiacionFrancesa(monto, tasaInteres, cuotas, cuotaMensual);
+                    TablaAmortizacion = CalcularAmortiacionFrancesa(monto, tasaInteres, cuotas, cuotaMensual);
 
                     // Mostrar los resultados en el DataGridView
                     dataGridView1.Rows.Clear();
-                    foreach (Amortizacion item in tablaAmortizacion)
+                    foreach (Amortizacion item in TablaAmortizacion)
                     {
                         dataGridView1.Rows.Add(Math.Round((double)item.Mes, 2), Math.Round((double)item.Amorti, 2), Math.Round((double)item.Interes, 2), Math.Round((double)item.Cuota, 2));
 
                     }
-                    txtResultadoCredito.Text = "Cuota Mensual: " + cuotaMensual.ToString("C");
+                    txtResultadoCredito.Text = cuotaMensual.ToString("F2");
                 }
                 else
                 {
@@ -602,7 +658,7 @@ namespace Amortizacion__1
                 decimal limiteCredito = cliente.SaldoTotal * 2;
 
                 // Establecer el límite del crédito en txtCreditoD
-                txtCreditoD.Text = limiteCredito.ToString("C");
+                txtCreditoD.Text = limiteCredito.ToString();
             }
             else
             {
@@ -630,5 +686,124 @@ namespace Amortizacion__1
             txtNombreRetiro.Text = "";
             txtSaldoDisponible.Text = "";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Obtener la cantidad total del crédito desde el campo del formulario
+                decimal monto = decimal.Parse(txtMontoCredito.Text);
+
+                // Guardar el monto de crédito solicitado en la variable específica para este botón
+                montoCreditoSolicitado = monto;
+
+                // Puedes usar montoCreditoSolicitado según tus necesidades (almacenarlo, mostrarlo, etc.)
+
+                // Limpiar el campo del formulario después de agregar el crédito
+                txtMontoCredito.Text = "";
+
+                // Mostrar un mensaje indicando que el crédito se solicitó correctamente
+                MessageBox.Show("Crédito solicitado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (FormatException)
+            {
+                // Manejar la excepción si la conversión del monto no es válida
+                MessageBox.Show("Ingrese una cantidad de crédito válida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void btnBuscarabono_Click(object sender, EventArgs e)
+        {
+            // Obtener la CURP ingresada por el usuario
+            string curpBuscada = txtCurpB.Text;
+
+            // Buscar el cliente en la lista por CURP
+            Cliente cliente = listaClientes.Find(c => c.CURP == curpBuscada);
+
+            if (cliente != null)
+            {
+                // Establecer el nombre del cliente en textBox2
+                textBox2.Text = cliente.Nombre;
+
+
+
+
+                // Sumar las cuotas mensuales de todos los meses amortizados
+                decimal totalAbonos = TablaAmortizacion.Sum(amortizacion => amortizacion.Cuota);
+
+                // Establecer el total de abonos en textBox3
+                textBox3.Text = totalAbonos.ToString("F2");
+                // Mostrar la cuota mensual en txtCuotamensualA
+                txtCuotamensualA.Text = TablaAmortizacion.First().Cuota.ToString("F2"); // Sin decimales//
+
+                // Llamar al método OtroMetodoDondeUsasLaAmortizacion para realizar acciones adicionales si es necesario
+                //btnSolicitarC();
+            }
+            else
+            {
+                // Si no se encuentra un cliente con la CURP ingresada, mostrar un mensaje de error
+                MessageBox.Show("Cliente no encontrado con la CURP proporcionada.");
+
+                // Limpiar los campos de texto
+                textBox2.Text = "";
+                textBox3.Text = "";
+            }
+        }
+
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMontoA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo dígitos, la tecla de retroceso, espacios, guiones y paréntesis
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != ' ' && e.KeyChar != '-' && e.KeyChar != '(' && e.KeyChar != ')')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btnAbonar_Click(object sender, EventArgs e)
+        {
+            // Obtener la cantidad ingresada para abonar
+            decimal cantidadAbono;
+
+            if (!decimal.TryParse(txtCuotamensualA.Text, out cantidadAbono))
+            {
+                MessageBox.Show("Ingrese una cantidad de abono válida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Obtener el crédito total desde el textBox3
+            decimal creditoTotal;
+
+            if (!decimal.TryParse(textBox3.Text, out creditoTotal))
+            {
+                MessageBox.Show("Error al obtener el crédito total.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Restar la cantidad de abono al crédito total
+            creditoTotal -= cantidadAbono;
+
+            // Actualizar el valor en textBox3
+            textBox3.Text = creditoTotal.ToString();
+
+            // Limpiar el valor en txtCuotamensualA
+            txtCuotamensualA.Text = "";
+        }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = "";
+            textBox2.Text = "";
+            txtCuotamensualA.Text = "";
+            txtCurpB.Text = "";
+
+        }
     }
 }
+
