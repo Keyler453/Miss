@@ -347,18 +347,31 @@ namespace Amortizacion__1
         private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
         {
             {
-                // Permitir solo dígitos y la tecla de retroceso
-                if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+                if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != ' ' && e.KeyChar != '-' && e.KeyChar != '(' && e.KeyChar != ')')
                 {
-                    e.Handled = true; // Ignorar el carácter ingresado
+                    e.Handled = true;
                 }
+
             }
         }
         private void btnGuardar_Click_1(object sender, EventArgs e)
         {
             // Obtener datos del formulario
             string nombre = txtNombre1.Text;
+<<<<<<< HEAD
             if (string.IsNullOrWhiteSpace(nombre))
+=======
+            decimal montoApertura;
+
+            if (decimal.TryParse(txtMontoA.Text, out decimal montoAperturaParse))
+            {
+            }
+            string curp = txtCurp.Text;
+            string direccion = txtDireccion.Text;
+            string telefonoStr = txtTelefono.Text;
+
+            if (int.TryParse(telefonoStr, out int telefono))
+>>>>>>> 537ca444488f3ceb2a7f15dadf72f694f0ad5c7b
             {
                 MessageBox.Show("Por favor, ingrese un nombre antes de guardar.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -378,6 +391,7 @@ namespace Amortizacion__1
                     return;
                 }
             }
+<<<<<<< HEAD
             else
             {
                 MessageBox.Show("Ingrese un monto de apertura válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -409,6 +423,8 @@ namespace Amortizacion__1
             {
 
             }
+=======
+>>>>>>> 537ca444488f3ceb2a7f15dadf72f694f0ad5c7b
 
             DateTime fechaNacimiento = txtFechaNacimiento.Value;
 
@@ -417,7 +433,15 @@ namespace Amortizacion__1
             if (edad.TotalDays < 18 * 365)
             {
                 MessageBox.Show("Debe ser mayor de 18 años para " +
+<<<<<<< HEAD
                     "abrir una cuenta en nuestro banco.", "Error",
+=======
+<<<<<<< HEAD
+                    "abrir una cuenta en nuestro banco.", "Error",
+=======
+                    "abrir una cuenta en nuestro banco.", "Error", 
+>>>>>>> 2dff489750b1e62ab1405ec7b07c07a5746bb831
+>>>>>>> 537ca444488f3ceb2a7f15dadf72f694f0ad5c7b
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return; // Salir del método si el usuario no tiene más de 18 años
             }
@@ -671,6 +695,7 @@ namespace Amortizacion__1
             }
         }
 
+<<<<<<< HEAD
         private void Limpiard_Click(object sender, EventArgs e)
         {
             numericUpDown1.Value = 0;
@@ -757,6 +782,8 @@ namespace Amortizacion__1
 
         }
 
+=======
+>>>>>>> 537ca444488f3ceb2a7f15dadf72f694f0ad5c7b
         private void txtMontoA_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Permitir solo dígitos, la tecla de retroceso, espacios, guiones y paréntesis
@@ -765,6 +792,7 @@ namespace Amortizacion__1
                 e.Handled = true;
             }
         }
+<<<<<<< HEAD
 
         private void btnAbonar_Click(object sender, EventArgs e)
         {
@@ -804,6 +832,8 @@ namespace Amortizacion__1
             txtCurpB.Text = "";
 
         }
+=======
+>>>>>>> 537ca444488f3ceb2a7f15dadf72f694f0ad5c7b
     }
 }
 

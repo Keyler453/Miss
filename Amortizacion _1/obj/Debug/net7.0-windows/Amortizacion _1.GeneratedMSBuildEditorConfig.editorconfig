@@ -14,4 +14,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Amortizacion__1
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\Caleth\Desktop\Miss\Amortizacion _1\
+=======
+build_property.ProjectDir = C:\Users\Caleth\Documents\Miss\Amortizacion _1\
+>>>>>>> 537ca444488f3ceb2a7f15dadf72f694f0ad5c7b
